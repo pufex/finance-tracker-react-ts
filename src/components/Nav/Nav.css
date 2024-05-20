@@ -1,0 +1,40 @@
+.nav{
+    width: 100%;
+    height: 6rem;
+    background-color: var(--element-color-1);
+    border-bottom: var(--outline-color-2);
+}
+
+.nav__inner{
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+
+.nav__link{
+    font-size: 1.25rem;
+    color: var(--text-color-2);
+    text-decoration: none;
+    position: relative;
+}
+
+.nav__link::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 2px) scale(0);
+    width: calc(100% + 0.05em);
+    height: 0.1em;
+    background-color: currentColor;
+}
+
+.nav__link:hover::after{
+    transform: translate(-50%, 2px) scale(1);
+}

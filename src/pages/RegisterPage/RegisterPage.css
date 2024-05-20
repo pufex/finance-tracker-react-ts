@@ -1,0 +1,41 @@
+.register-page__main{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.register-page__card{
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 2px solid var(--outline-color-3);
+    box-shadow: 0 0 6px var(--outline-color-3);
+    border-radius: 10px;
+}
+
+.register-page__header{
+    width: 100%;
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.register-page__icon{
+    color: var(--text-color-3);
+}
+
+
+.register-page__heading{
+    font-size: 2rem;
+}
+
+.register-page__links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}

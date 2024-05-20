@@ -1,0 +1,10 @@
+.add-record__form{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.add-record__submit{
+    margin-top: 1rem;
+}

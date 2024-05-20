@@ -1,0 +1,21 @@
+.window__window{
+    position: absolute;
+    width: 100vw;
+    background-color: var(--element-color-2);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.275);
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.275);
+    animation: WindowIn 300ms ease-out 0ms forwards;
+    overflow: hidden;
+    z-index: 100;
+}
+
+@keyframes WindowIn {
+    from{
+        transform: translateY(-50%);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

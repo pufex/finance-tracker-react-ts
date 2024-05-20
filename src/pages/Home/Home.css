@@ -1,0 +1,85 @@
+.home__main{
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    min-height: calc(100vh - 6rem);
+}
+
+.home__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 2rem;
+    margin-bottom: 2rem;
+}
+
+.home__heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.home__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+.home__form{
+    padding-block: 2rem;
+}
+
+.home__form__title{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+    margin-bottom: 1.5rem;
+}
+
+.home__form__providers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home__create-account{
+    margin-top: 1rem;
+}
+
+.home__form__links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.home__form__link{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color-3);
+}
+
+.home__form__link-actual{
+    font: inherit;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.home__form__thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+    border: 1px solid var(--outline-color-3);
+    box-shadow: 0px 0px 12px rgba(131, 131, 131, 0.404);
+}

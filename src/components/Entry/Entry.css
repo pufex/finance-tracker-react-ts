@@ -1,0 +1,14 @@
+.entry__cell{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--outline-color-3);
+    border-right: 1px solid var(--outline-color-3);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color-3);
+}
+
+.entry__cell.uneven{
+    background-color: var(--element-color-4);
+}

@@ -1,0 +1,52 @@
+.profile-button{
+    appearance: none;
+    border: none;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-inline: 1.5rem;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.25rem;
+    color: var(--text-color-1);
+    font-weight: 600;
+    border-top: 1px solid var(--outline-color-3);
+    border-bottom: 1px solid var(--outline-color-3);
+}
+
+.profile-button + .profile-button{
+    border-top: none;
+}
+
+body.light .profile-button:hover{
+    filter: brightness(0.975)
+}
+
+body.light .profile-button:active{
+    filter: brightness(0.95)
+}
+
+.profile-button.loading{
+    pointer-events: none;
+    filter: brightness(0.95);
+}
+
+.profile-button__loading{
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: PBLoadingAnimation 1500ms linear 0ms infinite;
+}
+
+@keyframes PBLoadingAnimation {
+    from{
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to{
+        transform: translateY(-50%) rotate(360deg);
+    }
+}

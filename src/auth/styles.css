@@ -1,0 +1,10 @@
+.auth__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.auth__submit{
+    margin-top: 0.5rem;
+}

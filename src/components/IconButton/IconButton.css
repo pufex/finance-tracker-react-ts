@@ -1,0 +1,39 @@
+.icon-button__button{
+    outline: none;
+    border: 1px solid var(--outline-color-3);
+    background-color: var(--element-color-2);
+    position: relative;
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 10px 10px 0 0;
+}
+
+body.light .icon-button__button:hover{
+    filter: brightness(0.975)
+}
+
+body.light .icon-button__button:active{
+    filter: brightness(0.95)
+}
+
+.icon-button__icon,
+.icon-button__loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-button__loading{
+    color: var(--text-color-3);
+    animation: IBLoading 1500ms linear 0ms infinite;
+}
+
+@keyframes IBLoading {
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
